@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Play Puck Breaker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hud">
+      <div class="pill">Score: <span id="score">0</span></div>
+      <div class="pill">Goals: <span id="goals">0</span></div>
+      <div class="pill">Pucks: <span id="pucks">1</span></div>
+      <div class="pill">High Score: <span id="highScore">0</span></div>
+      <div class="pill" id="ppPill">Power Play: <span id="pp">OFF</span></div>
+    </section>
+
+    <canvas id="game" width="760" height="760"></canvas>
+    <p class="help">Move the hockey stick like Block Breaker. Start with 1 puck. Power Play blocks spawn 1 extra puck. If all pucks fall below the stick, you lose.</p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
